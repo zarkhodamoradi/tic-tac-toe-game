@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".gameActivity"
+    android:background="@drawable/background2"
+    >
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="180dp"></TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/def"
+        android:padding="3dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/txtCell1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@color/specialBack"
+                android:gravity="center"
+                android:textSize="90sp" />
+
+            <TextView
+                android:id="@+id/txtCell2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@color/specialBack"
+                android:gravity="center"
+                android:textSize="90sp" />
+
+            <TextView
+                android:id="@+id/txtCell3"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@color/specialBack"
+                android:gravity="center"
+                android:textSize="90sp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/txtCell4"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@color/specialBack"
+                android:gravity="center"
+                android:textSize="90sp" />
+
+            <TextView
+                android:id="@+id/txtCell5"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@color/specialBack"
+                android:gravity="center"
+                android:textSize="90sp" />
+
+            <TextView
+                android:id="@+id/txtCell6"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@color/specialBack"
+                android:gravity="center"
+                android:textSize="90sp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/txtCell7"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@color/specialBack"
+                android:gravity="center"
+                android:textSize="90sp" />
+
+            <TextView
+                android:id="@+id/txtCell8"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@color/specialBack"
+                android:gravity="center"
+                android:textSize="90sp" />
+
+            <TextView
+                android:id="@+id/txtCell9"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@color/specialBack"
+                android:gravity="center"
+                android:textSize="90sp" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/def"
+
+        />
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|right"
+        android:layout_margin="3dp"
+        android:text="Reset"
+        android:backgroundTint="#E91E63"/>
+</LinearLayout>

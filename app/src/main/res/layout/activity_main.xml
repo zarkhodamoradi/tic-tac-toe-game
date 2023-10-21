@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/backgroundcover1">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:text="" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tic-Toc-Toe"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:fontFamily="serif"
+        android:shadowRadius="9000"
+        android:shadowColor="@color/black"
+       android:backgroundTint="#8A000000"
+        android:textColor="#FFF"/>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="" />
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_gravity="center"
+        android:layout_width="100pt"
+        android:layout_height="wrap_content"
+        android:text="PLAY"
+        android:textSize="30dp"
+        android:fontFamily="serif"
+        android:shadowColor="@color/black"
+        android:shadowRadius="90"
+        android:shadowDx="220"
+        android:shadowDy="@integer/material_motion_duration_medium_1"
+        android:backgroundTint="#722196F3"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+</LinearLayout>
