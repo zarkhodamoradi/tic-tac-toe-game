@@ -161,21 +161,23 @@ public class gameActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 if (fix[5] == 0) {
+                    if (User % 2 == 0) {
+                        txtCell6.setText("O");
+                        txtCell6.setTextColor(Color.RED);
+                    } else {
+                        txtCell6.setText("X");
+                        txtCell6.setTextColor(Color.BLUE);
+                    }
+                    User++;
+                    fix[5]++;
+                    try {
+                        content[5] = txtCell6.getText().toString().charAt(0);
+                    } catch (Exception ex) {
+                    }
+                    CheckWinner();
                 }
-                if (User % 2 == 0) {
-                    txtCell6.setText("O");
-                    txtCell6.setTextColor(Color.RED);
-                } else {
-                    txtCell6.setText("X");
-                    txtCell6.setTextColor(Color.BLUE);
-                }
-                User++;
-                fix[5]++;
-                try {
-                    content[5] = txtCell6.getText().toString().charAt(0);
-                } catch (Exception ex) {
-                }
-                CheckWinner();
+
+
             }
         });
         txtCell7.setOnClickListener(new View.OnClickListener() {
@@ -303,7 +305,7 @@ public class gameActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(gameActivity.this);
         builder.setTitle("Congratulation!!!");
         String user = "";
-        builder.setIcon(android.R.drawable.btn_star);
+        builder.setIcon(android.R.drawable.star_big_on);
         if (User % 2 == 1) user = "Player Number 1(O) ";
         else user = "Player Number 2(X) ";
         builder.setCancelable(false);
@@ -370,7 +372,7 @@ public class gameActivity extends AppCompatActivity {
            else if(fix[0]==1 && fix[1]==1 && fix[2]==1 && fix[3]==1 && fix[4]==1&& fix[5]==1&& fix[6]==1&& fix[7]==1&& fix[8]==1){
                 AlertDialog.Builder builder = new AlertDialog.Builder(gameActivity.this);
                 builder.setTitle("");
-                builder.setMessage("NOBODY WINS");
+                builder.setMessage("DRAW");
                 builder.setPositiveButton("Restrat", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
