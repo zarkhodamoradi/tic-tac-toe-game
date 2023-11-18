@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,6 +25,8 @@ public class gameActivity extends AppCompatActivity {
     TextView txtWinsOfO;
     TextView txtWinsOfX;
 
+    MediaPlayer acheiveMedia;
+
     int User = 0;
     int fix[] = new int[9];
     char content[] = new char[9];
@@ -36,6 +39,8 @@ public class gameActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
         SetUpView();
+
+acheiveMedia = MediaPlayer.create(this, R.raw.acheivesound);
 
         for (int i = 0; i < 9; i++) {
             fix[i] = 0;
@@ -319,12 +324,14 @@ public class gameActivity extends AppCompatActivity {
         String user = "";
         builder.setIcon(android.R.drawable.star_big_on);
         if (User % 2 == 1) {
+            acheiveMedia.start();
             user = "Player Number 1(O) ";
             countOWins++;
             txtWinsOfO.setText("Player O : "+countOWins);
 
         }
         else {
+            acheiveMedia.start();
             user = "Player Number 2(X) ";
             countXWins++;
             txtWinsOfX.setText("Player X : "+countXWins);
@@ -430,5 +437,9 @@ public class gameActivity extends AppCompatActivity {
 
     }
 
-
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        acheiveMedia.release();
+    }
 }
