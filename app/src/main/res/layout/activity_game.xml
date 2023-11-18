@@ -8,10 +8,50 @@
     tools:context=".gameActivity"
     android:background="@drawable/background2"
     >
-
-<TextView
+<LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="180dp"></TextView>
+    android:layout_height="180dp"
+
+    >
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.16"> </Space>
+
+    <TextView
+        android:id="@+id/txtWinsOfO"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:padding="25dp"
+        android:text="Player O : 0"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/txtWinsOfX"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:padding="25dp"
+        android:text="Player X : 0"
+
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.16"> </Space>
+</LinearLayout>
+<!--<TextView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="180dp"></TextView>-->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,7 +75,9 @@
                 android:layout_gravity="center"
                 android:layout_margin="1dp"
                 android:background="@color/specialBack"
+                android:fontFamily="casual"
                 android:gravity="center"
+
                 android:textSize="90sp" />
 
             <TextView
@@ -45,7 +87,9 @@
                 android:layout_gravity="center"
                 android:layout_margin="1dp"
                 android:background="@color/specialBack"
+                android:fontFamily="casual"
                 android:gravity="center"
+
                 android:textSize="90sp" />
 
             <TextView
@@ -55,6 +99,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="1dp"
                 android:background="@color/specialBack"
+                android:fontFamily="casual"
                 android:gravity="center"
                 android:textSize="90sp" />
 
@@ -77,6 +122,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="1dp"
                 android:background="@color/specialBack"
+                android:fontFamily="casual"
                 android:gravity="center"
                 android:textSize="90sp" />
 
@@ -87,6 +133,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="1dp"
                 android:background="@color/specialBack"
+                android:fontFamily="casual"
                 android:gravity="center"
                 android:textSize="90sp" />
 
@@ -97,6 +144,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="1dp"
                 android:background="@color/specialBack"
+                android:fontFamily="casual"
                 android:gravity="center"
                 android:textSize="90sp" />
 
@@ -119,6 +167,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="1dp"
                 android:background="@color/specialBack"
+                android:fontFamily="casual"
                 android:gravity="center"
                 android:textSize="90sp" />
 
@@ -129,6 +178,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="1dp"
                 android:background="@color/specialBack"
+                android:fontFamily="casual"
                 android:gravity="center"
                 android:textSize="90sp" />
 
@@ -139,6 +189,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="1dp"
                 android:background="@color/specialBack"
+                android:fontFamily="casual"
                 android:gravity="center"
                 android:textSize="90sp" />
 

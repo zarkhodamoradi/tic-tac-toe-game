@@ -21,10 +21,15 @@ public class gameActivity extends AppCompatActivity {
     TextView txtCell8;
     TextView txtCell9;
     Button btnReset;
+    TextView txtWinsOfO;
+    TextView txtWinsOfX;
 
     int User = 0;
     int fix[] = new int[9];
     char content[] = new char[9];
+
+    int countOWins =0 ;
+    int countXWins = 0 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,10 +54,10 @@ public class gameActivity extends AppCompatActivity {
                 if (fix[0] == 0) {
                     if (User % 2 == 0) {
                         txtCell1.setText("O");
-                        txtCell1.setTextColor(Color.RED);
+                        txtCell1.setTextColor(getColor(R.color.red));
                     } else {
                         txtCell1.setText("X");
-                        txtCell1.setTextColor(Color.BLUE);
+                        txtCell1.setTextColor(getColor(R.color.blue));
                     }
                     User++;
                     fix[0]++;
@@ -71,10 +76,11 @@ public class gameActivity extends AppCompatActivity {
                 if (fix[1] == 0) {
                     if (User % 2 == 0) {
                         txtCell2.setText("O");
-                        txtCell2.setTextColor(Color.RED);
+                        txtCell2.setTextColor(getColor(R.color.red));
                     } else {
                         txtCell2.setText("X");
-                        txtCell2.setTextColor(Color.BLUE);
+                        txtCell2.setTextColor(getColor(R.color.blue));
+
                     }
                     User++;
                     fix[1]++;
@@ -94,10 +100,10 @@ public class gameActivity extends AppCompatActivity {
                 if (fix[2] == 0) {
                     if (User % 2 == 0) {
                         txtCell3.setText("O");
-                        txtCell3.setTextColor(Color.RED);
+                        txtCell3.setTextColor(getColor(R.color.red));
                     } else {
                         txtCell3.setText("X");
-                        txtCell3.setTextColor(Color.BLUE);
+                        txtCell3.setTextColor(getColor(R.color.blue));
                     }
                     User++;
                     fix[2]++;
@@ -117,10 +123,10 @@ public class gameActivity extends AppCompatActivity {
                 if (fix[3] == 0) {
                     if (User % 2 == 0) {
                         txtCell4.setText("O");
-                        txtCell4.setTextColor(Color.RED);
+                        txtCell4.setTextColor(getColor(R.color.red));
                     } else {
                         txtCell4.setText("X");
-                        txtCell4.setTextColor(Color.BLUE);
+                        txtCell4.setTextColor(getColor(R.color.blue));
                     }
                     User++;
                     fix[3]++;
@@ -140,10 +146,10 @@ public class gameActivity extends AppCompatActivity {
                 if (fix[4] == 0) {
                     if (User % 2 == 0) {
                         txtCell5.setText("O");
-                        txtCell5.setTextColor(Color.RED);
+                        txtCell5.setTextColor(getColor(R.color.red));
                     } else {
                         txtCell5.setText("X");
-                        txtCell5.setTextColor(Color.BLUE);
+                        txtCell5.setTextColor(getColor(R.color.blue));
                     }
                     User++;
                     fix[4]++;
@@ -163,10 +169,10 @@ public class gameActivity extends AppCompatActivity {
                 if (fix[5] == 0) {
                     if (User % 2 == 0) {
                         txtCell6.setText("O");
-                        txtCell6.setTextColor(Color.RED);
+                        txtCell6.setTextColor(getColor(R.color.red));
                     } else {
                         txtCell6.setText("X");
-                        txtCell6.setTextColor(Color.BLUE);
+                        txtCell6.setTextColor(getColor(R.color.blue));
                     }
                     User++;
                     fix[5]++;
@@ -186,11 +192,11 @@ public class gameActivity extends AppCompatActivity {
 
                 if (fix[6] == 0) {
                     if (User % 2 == 0) {
-                        txtCell7.setText("O");                        txtCell8.setTextColor(Color.RED);
-                        txtCell7.setTextColor(Color.RED);
+                        txtCell7.setText("O");
+                        txtCell7.setTextColor(getColor(R.color.red));
                     } else {
                         txtCell7.setText("X");
-                        txtCell7.setTextColor(Color.BLUE);
+                        txtCell7.setTextColor(getColor(R.color.blue));
                     }
                     User++;
                     fix[6]++;
@@ -210,10 +216,10 @@ public class gameActivity extends AppCompatActivity {
                 if (fix[7] == 0) {
                     if (User % 2 == 0) {
                         txtCell8.setText("O");
-                        txtCell8.setTextColor(Color.RED);
+                        txtCell8.setTextColor(getColor(R.color.red));
                     } else {
                         txtCell8.setText("X");
-                        txtCell8.setTextColor(Color.BLUE);
+                        txtCell8.setTextColor(getColor(R.color.blue));
                     }
                     User++;
                     fix[7]++;
@@ -233,10 +239,10 @@ public class gameActivity extends AppCompatActivity {
                 if (fix[8] == 0) {
                     if (User % 2 == 0) {
                         txtCell9.setText("O");
-                        txtCell9.setTextColor(Color.RED);
+                        txtCell9.setTextColor(getColor(R.color.red));
                     } else {
                         txtCell9.setText("X");
-                        txtCell9.setTextColor(Color.BLUE);
+                        txtCell9.setTextColor(getColor(R.color.blue));
                     }
                     User++;
                     fix[8]++;
@@ -260,6 +266,10 @@ public class gameActivity extends AppCompatActivity {
                 for (int i = 0; i < 9; i++) {
                     content[i] = (char) (i + 65);
                 }
+                countOWins = 0 ;
+                countXWins = 0 ;
+                txtWinsOfO.setText("Player O : "+countOWins);
+                txtWinsOfX.setText("Player X : "+countXWins);
                 txtCell1.setText("");
                 txtCell2.setText("");
                 txtCell3.setText("");
@@ -298,6 +308,8 @@ public class gameActivity extends AppCompatActivity {
         txtCell8 = findViewById(R.id.txtCell8);
         txtCell9 = findViewById(R.id.txtCell9);
         btnReset= findViewById(R.id.btnReset);
+        txtWinsOfO = findViewById(R.id.txtWinsOfO);
+        txtWinsOfX = findViewById(R.id.txtWinsOfX);
 
     }
 
@@ -306,8 +318,17 @@ public class gameActivity extends AppCompatActivity {
         builder.setTitle("Congratulation!!!");
         String user = "";
         builder.setIcon(android.R.drawable.star_big_on);
-        if (User % 2 == 1) user = "Player Number 1(O) ";
-        else user = "Player Number 2(X) ";
+        if (User % 2 == 1) {
+            user = "Player Number 1(O) ";
+            countOWins++;
+            txtWinsOfO.setText("Player O : "+countOWins);
+
+        }
+        else {
+            user = "Player Number 2(X) ";
+            countXWins++;
+            txtWinsOfX.setText("Player X : "+countXWins);
+        }
         builder.setCancelable(false);
         builder.setMessage(user + "Won");
         builder.setPositiveButton("Restrat", new DialogInterface.OnClickListener() {

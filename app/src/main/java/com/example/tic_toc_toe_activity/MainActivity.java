@@ -24,5 +24,6 @@ Button btnStart;
     }
     public void SetUpView(){
         btnStart= findViewById(R.id.btnStart);
+
     }
 }
