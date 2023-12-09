@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".gameActivity"
-    android:background="@drawable/background2"
+    android:background="@drawable/main_background"
     >
 <LinearLayout
     android:layout_width="match_parent"
@@ -26,7 +26,7 @@
         android:layout_weight="0.5"
         android:fontFamily="serif"
         android:gravity="center"
-        android:padding="25dp"
+        android:padding="15dp"
         android:text="Player O : 0"
         android:textColor="@color/white"
         android:textSize="17dp" />
@@ -39,7 +39,7 @@
         android:layout_weight="0.5"
         android:fontFamily="serif"
         android:gravity="center"
-        android:padding="25dp"
+        android:padding="15dp"
         android:text="Player X : 0"
 
         android:textColor="@color/white"
@@ -53,6 +53,7 @@
 <!--    android:layout_width="match_parent"-->
 <!--    android:layout_height="180dp"></TextView>-->
     <LinearLayout
+        android:id="@+id/gameTable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"

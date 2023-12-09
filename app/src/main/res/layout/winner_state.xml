@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="550dp"
+    android:padding="30dp"
+    android:background="@drawable/back8"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtCongragulation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+
+<LinearLayout
+    android:id="@+id/LinearLayoutWinnerState"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/txtCellWinner1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:background="@color/specialBack"
+            android:fontFamily="casual"
+            android:gravity="center"
+
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/txtCellWinner2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:background="@color/specialBack"
+            android:fontFamily="casual"
+            android:gravity="center"
+
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/txtCellWinner3"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:background="@color/specialBack"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textSize="70sp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/txtCellWinner4"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:background="@color/specialBack"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/txtCellWinner5"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:background="@color/specialBack"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/txtCellWinner6"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:background="@color/specialBack"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textSize="70sp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/txtCellWinner7"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:background="@color/specialBack"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/txtCellWinner8"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:background="@color/specialBack"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/txtCellWinner9"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:background="@color/specialBack"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textSize="70sp" />
+
+
+
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnNegative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#5C7E57C2"
+            android:fontFamily="serif-monospace"
+            android:text="Exit"
+            android:textColor="#FFFFFF" />
+<Space
+    android:layout_width="0dp"
+    android:layout_weight="5"
+    android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/btnPositive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#5C7E57C2"
+            android:fontFamily="serif-monospace"
+            android:text="Restart"
+            android:textColor="#FFFFFF" />
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

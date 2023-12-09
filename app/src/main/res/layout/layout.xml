@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:padding="30dp"
+    android:background="@drawable/backsmall7"
+
+    android:orientation="vertical">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:fontFamily="serif"
+        android:text="Choose Your Nicknames"
+        android:textColor="#F9FFFE"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/edtTextNameFirstPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="20"
+        android:padding="9dp"
+        android:fontFamily="serif-monospace"
+        android:hint="Enter name of player 1"
+        android:inputType="text"
+        android:background="@color/specialBack"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/edtTextNameSecondPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="9dp"
+        android:ems="20"
+        android:fontFamily="serif-monospace"
+        android:hint="Enter name of player 2"
+        android:inputType="text"
+        android:background="@color/specialBack"
+
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+    <TextView
+        android:id="@+id/txtNameChecking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#E64A19"
+
+
+        />
+
+    <Button
+        android:id="@+id/btnConfirmNames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#75E8EAF6"
+        android:fontFamily="monospace"
+        android:text="confirm"
+
+        android:layout_gravity="right"
+        android:textColor="@color/white" />
+</LinearLayout>
