@@ -19,9 +19,7 @@ This is a simple Tic Tac Toe game implemented in Android using Java. The game su
 5. The game ends when one player manages to align three of their symbols horizontally, vertically, or diagonally, or when the grid is full (draw).
 6. The winner is displayed in a dialog, and players have the option to restart the game or exit.
 
-## Screenshots(snapshots of winner state)
 
-Include screenshots of your game in action to give users a visual representation of what to expect when they play your game.
 
 ## Installation
 
