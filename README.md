@@ -11,7 +11,7 @@ Two players can enter their names, take turns playing, and enjoy playing.
 The start screen features a **Play** button to begin the game.
 
 <p align="center">
-  <img src="images/main-page.png" width="300" alt="Main Page"/>
+  <img src="images/main-page.png" width="150" alt="Main Page"/>
 </p>
 
 ---
@@ -22,7 +22,7 @@ Before the game starts, a dialog asks both players to enter their names.
 
 | Name Prompt | Entering Names |
 |:------------:|:---------------:|
-| <img src="pics/prompt-enter-names.png" width="250"/> | <img src="pics/enter-names.png" width="250"/> |
+| <img src="images/prompt-enter-names.png" width="150"/> | <img src="images/enter-names.png" width="150"/> |
 ---
 
 ### 3. Playing the Game
@@ -32,7 +32,7 @@ Players take turns marking **O** and **X** on the grid.
 The score and turn indicator update dynamically.
 
 <p align="center">
-  <img src="images/game-play.png" width="300" alt="Game Play"/>
+  <img src="images/game-play.png" width="150" alt="Game Play"/>
 </p>
 
 ---
