@@ -1,24 +1,58 @@
-# Tic Tac Toe Game
+# 🎮 Tic Tac Toe Android Game
 
-This is a simple Tic Tac Toe game implemented in Android using Java. The game supports two players and keeps track of their scores. It features a dialog for entering players' names and another dialog to display the winner once the game is finished. Sound effects are included to enhance the gaming experience.
+A simple and fun **Tic Tac Toe** Android game built in Java using Android Studio.  
+Two players can enter their names, take turns playing, and enjoy playing. 
 
-## Features
+---
 
-- Two-player mode.
-- Players' names entry dialog.
-- Winner display dialog.
-- Score tracking for each player.
-- Sound effects for game actions.
+##  Game Flow
 
-## How to Play
+###  1. Main Page
+The start screen features a **Play** button to begin the game.
 
-1. Launch the app.
-2. Enter the names of the two players in the dialog that appears.
-3. Start the game by tapping on a cell in the 3x3 grid.
-4. Players take turns to tap on empty cells to place their respective symbols (X or O).
-5. The game ends when one player manages to align three of their symbols horizontally, vertically, or diagonally, or when the grid is full (draw).
-6. The winner is displayed in a dialog, and players have the option to restart the game or exit.
+<p align="center">
+  <img src="images/main-page.png" width="300" alt="Main Page"/>
+</p>
 
+---
+
+### 2. Enter Player Names
+Before the game starts, a dialog asks both players to enter their names.
+
+
+| Name Prompt | Entering Names |
+|:------------:|:---------------:|
+| <img src="pics/prompt-enter-names.png" width="250"/> | <img src="pics/enter-names.png" width="250"/> |
+---
+
+### 3. Playing the Game
+Players take turns marking **O** and **X** on the grid.  
+- **O** is red (first player)  
+- **X** is blue (second player)  
+The score and turn indicator update dynamically.
+
+<p align="center">
+  <img src="images/game-play.png" width="300" alt="Game Play"/>
+</p>
+
+---
+
+###  4. End States
+At the end of each round, one of the following dialogs appears:
+
+
+
+####  Game Results
+
+| O Wins | X Wins | Draw |
+|:------:|:------:|:----:|
+| <img src="pics/win_o.png" width="200"/> | <img src="pics/win_x.png" width="200"/> | <img src="pics/draw.png" width="200"/> |
+
+
+
+---
+
+✨ **Enjoy playing Tic Tac Toe with your friends!**
 
 
 ## Installation
@@ -26,15 +60,6 @@ This is a simple Tic Tac Toe game implemented in Android using Java. The game su
 1. Clone the repository to your local machine.
 2. Open the project in Android Studio.
 3. Build and run the project on an Android emulator or a physical Android device.
-
-## Dependencies
-
-No external dependencies are required to run this project.
-
-## Credits
-
-- Sound effects obtained from [freesound.org](https://freesound.org/).
-- Icon made by [Freepik](https://www.freepik.com) from [www.flaticon.com](https://www.flaticon.com).
 
 
 
